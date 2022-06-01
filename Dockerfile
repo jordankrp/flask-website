@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 RUN apt-get update
-RUN apt-get -y install python python-setuptools python-dev build-essential python3-pip
+RUN apt-get -y install python3 python-setuptools build-essential python3-pip
 RUN pip install flask
 COPY hello.py /opt/
 COPY templates/index.html /opt/templates/
